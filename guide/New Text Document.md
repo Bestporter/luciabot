@@ -80,7 +80,7 @@ if __name__ == '__main__':
 首先我们导入 `bot_config.py` 并将其传入初始化函数中，再加载所有位于 `lucia/bot_plugin` 目录下的插件，最后调用 `nonebot.run()` 来启动程序。
 
 ## 编写 NoneBot 插件
-以上的启动文件会设置为加载 `lucia/bot_plugin` 下的所有插件。一个插件的定义如下：可以是一个 `.py` 文件，或者可以是一个文件夹，其中包含 `__init__.py` 入口文件。我们第一个插件选择的是前者的简单方式。打开先前创建的 `luciabot/lucia/bot_plugins/ping.py` 文件，添加如下代码：
+以上的启动文件会设置为加载 `lucia/bot_plugins` 下的所有插件。一个插件的定义如下：可以是一个 `.py` 文件，或者可以是一个文件夹，其中包含 `__init__.py` 入口文件。我们第一个插件选择的是前者的简单方式。打开先前创建的 `luciabot/lucia/bot_plugins/ping.py` 文件，添加如下代码：
 ```python
 from nonebot.command import CommandSession
 from nonebot.plugin import on_command
